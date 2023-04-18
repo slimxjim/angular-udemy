@@ -7,12 +7,33 @@
   type="text"
   class="form-control"
   [(ngModel)]="serverName">
-<p>{{serverName}}</p>
+<!--<p>{{serverName}}</p>-->
 <button
   class="btn btn-primary"
   [disabled]="!allowNewServer"
   (click)="onCreateServer()">Add server</button>
-<p [innerText]="allowNewServer"></p>
+<!--<p [innerText]="allowNewServer"></p>-->
 <p>{{serverCreationStatus}}</p>
+
+<h3>Assignment 2/35</h3>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12">
+      <ol>
+        <li>l.....</li>
+      </ol>
+      <hr>
+      <label>Username</label>
+      <input type="text" class="form-control" [(ngModel)]="username">
+      <p>{{username}}</p>
+      <button class="btn btn-primary"
+              [disabled]="username === ''"
+              (click)="username = ''"
+      >Reset user Assignment 2/35</button>
+
+    </div>
+  </div>
+</div>
 <app-server></app-server>
 <app-server></app-server>
+<!-- Emmet -> Tab -->
