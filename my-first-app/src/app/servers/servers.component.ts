@@ -15,6 +15,7 @@ export class ServersComponent {
   serverName = 'TestServer';
   serverCreationStatus = 'No server was created';
   serverCreated = false;
+  servers = ['Server 1', 'server 2'];
 
   username = '';
 
@@ -25,6 +26,7 @@ export class ServersComponent {
   }
 
   onCreateServer() {
+    this.servers.push(this.serverName);
     this.serverCreationStatus = 'Server was created! Name is ' + this.serverName;
     this.serverCreated = true;
   }
